@@ -15,7 +15,7 @@ public class JolikodSystem {
     		
     		System.out.println("\n----------JOLIKOD SYSTEM----------"); 
         	System.out.println("\n[1] Login\n[2] Sign up\n[3] Exit Application\n"); 
-        	System.out.print("Choose: ");
+        	System.out.print("Choose option: ");
         	
         	// Check if the next token is NOT an integer
         	if (!scanner.hasNextInt()) {
@@ -73,7 +73,7 @@ public class JolikodSystem {
     		SystemInterface system = new SystemInterface(scanner);
     		system.runInterface();
     	} else {
-    		System.out.println("❌ Incorrect credentials!!!");
+    		System.out.println("❌ Incorrect credentials!");
     	}    
     }
     
@@ -92,7 +92,7 @@ public class JolikodSystem {
     	if (DatabaseManager.registerUser(createUsername, createPassword)) {
     		System.out.println("\n🎉 Registration successful! You can now log in.");
     	} else {
-    		System.out.println("\n❌ Registration failed! Username and password may be empty!!!");
+    		System.out.println("\n❌ Registration failed! username and password may be empty!!!");
     	}	
     }
 }
