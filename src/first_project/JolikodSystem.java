@@ -84,7 +84,7 @@ public class JolikodSystem {
     	String createUsername;
     	String createPassword;
     		
-    	System.out.print("Create your username: ");
+    	System.out.print("Create username: ");
     		createUsername = scanner.nextLine();
     	System.out.print("Create password: ");
     		createPassword = scanner.nextLine();
